@@ -1,0 +1,101 @@
+/* Reset some basic elements for consistency */
+body, html, #root, .app-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Flexbox layout for the app container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header styling */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* Content container with flexbox layout */
+.content-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  padding: 20px;
+}
+
+/* Student list and result chart styling */
+.student-list, .result-chart {
+  flex: 1;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+/* Footer styling */
+.footer {
+  background: linear-gradient(45deg, #ff8a00, #e52e71);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.footer-column p, .footer p {
+  margin: 10px 0 0;
+  font-size: 0.9em;
+}
+
+.footer-column a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin: 0 10px; /* Adjusted margin to space out the icons */
+}
+
+.footer-column a:hover {
+  color: #ddd;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+  }
+
+  .student-list, .result-chart {
+    margin: 10px 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

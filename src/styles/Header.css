@@ -1,0 +1,35 @@
+
+.header {
+    background: linear-gradient(45deg, #ff8a00, #e52e71); /* You can adjust the gradient colors as per your preference */
+    color: white;
+    padding: 10px 0;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  
+  .logo {
+    width: 150px; /* Adjust size as needed */
+  }
+  
+  .header-content {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    font-style: italic;
+    opacity: 0.8;
+  }
+  
